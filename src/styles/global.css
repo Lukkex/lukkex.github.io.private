@@ -79,9 +79,18 @@
 }
 
 .smaller-image {
-	padding: 1em;
-	width: 15vw;
+	padding: 2em;
+	width: 12vw;
 	height: auto;
+}
+
+.logo {
+	width: 2vw;
+	height: auto;
+}
+
+.indent {
+	padding-left: 20px;
 }
 
 body {
