@@ -89,6 +89,13 @@ const entries = (await getCollection('journal')).sort(
 		<Header />
 		<main>
 			<section>
+				<div class = "center">
+					<a href = "https://archive.org/details/@k4iju"><img src="../../../public/internet-archive.jpg" class="smaller-image"/></a>
+				</div>
+				<ul class="center">
+					Click <a href = "https://archive.org/details/@k4iju">here</a> to access my Internet Archive.
+				</ul>
+				<br/>
 				<ul>
 					{
 						entries.map((post) => (

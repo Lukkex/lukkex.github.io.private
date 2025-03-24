@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BaseHead from '../components/BaseHead.astro';
+---
+
+<head>
+	<BaseHead title="The Garden" description=""/>
+</head>
+<Header/>
+<div>
+	<p style="color: white; font-weight: bold;">
+		This page is currently under construction.<br/><br/>Return here soon to enjoy the melody of the garden sanctuary.
+	</p>
+</div>
+<main>
+
+</main>
+<Footer/>
+<style>
+	main {
+		background-image: url(../../../../public/garden.gif);
+		background-size: cover;
+		background-position: top;
+		background-repeat: no-repeat;
+		filter: blur(10px);
+		height: 100vh;
+		width: 100vw;
+		color: white;
+	}
+
+	div {
+		background-color: black;
+		padding: 20px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: white;
+	}
+</style>

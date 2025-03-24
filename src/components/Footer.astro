@@ -1,4 +1,9 @@
 ---
+import InstaLogo from "./logos/Insta.astro";
+import YouTubeLogo from "./logos/YouTube.astro";
+import GithubLogo from "./logos/Github.astro";
+import SiteLogo from "./logos/SiteLogo.astro";
+
 const today = new Date();
 ---
 
@@ -31,15 +36,15 @@ const today = new Date();
 		</a>-->
 		<a href="https://www.instagram.com/iokaiju" target="_blank">
 			<span class="sr-only">Go to the K4IJU YouTube channel</span>
-			<img src="logos/instagram.png" class="logo">
+			<InstaLogo/>
 		</a>
 		<a href="https://www.youtube.com/@K4IJU" target="_blank">
 			<span class="sr-only">Go to the K4IJU YouTube channel</span>
-			<img src="logos/youtube.png" class="logo">
+			<YouTubeLogo/>
 		</a>
 		<a href="https://github.com/Lukkex" target="_blank">
 			<span class="sr-only">Go to Lukkex's GitHub repo</span>
-			<img src="logos/github.png" class="logo">
+			<GithubLogo/>
 		</a>
 	</div>
 </footer>
