@@ -5,10 +5,11 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2><a href="/"><img src = "STARR.png" class="logo-large"/></a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
+			<HeaderLink href="/blog">Projects</HeaderLink>
+			<HeaderLink href="/journal">Journal</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
 		<div class="social-links">
@@ -60,8 +61,8 @@ import { SITE_TITLE } from '../consts';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: var(--black2);
-		box-shadow: 0 2px 8px rgba(var(--white), 5%);
+		background-image: linear-gradient(var(--black-gradient));
+		box-shadow: 0 2px 20px rgba(var(--gray), 10%);
 	}
 	h2 {
 		margin: 0;
