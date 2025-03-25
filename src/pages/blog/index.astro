@@ -18,8 +18,8 @@ const posts = (await getCollection('blog')).sort(
 
 	</head>
 	<body>
+		<div class = "rainbow-thorns">
 		<Header />
-		<div  class = "rainbow-thorns">
 		<main>
 			<section>
 
@@ -40,13 +40,13 @@ const posts = (await getCollection('blog')).sort(
 				</ul>
 				<br/>
 				<div class="centering-container">
-					<img class="centered" src="444.png"/>
+					<img class="centered" src="../444.png"/>
 				</div>
 					<p class="centering-container"> What brings you here, voyager?</p>
 			</section>
 		</main>
-		</div>
 		<Footer />
+		</div>
 	</body>
 </html>
 
@@ -54,11 +54,6 @@ const posts = (await getCollection('blog')).sort(
 	main {
 		width: 960px;
 	}
-
-	p {
-		color: white;
-	}
-
 	ul {
 		display: flex;
 		flex-wrap: wrap;
@@ -97,12 +92,6 @@ const posts = (await getCollection('blog')).sort(
 		color: rgb(var(--black));
 		line-height: 1;
 	}
-
-	.centered {
-		max-width: 100%;
-		max-height: 100%;
-	}
-
 	.date {
 		margin: 0;
 		color: rgb(var(--gray));
@@ -115,9 +104,6 @@ const posts = (await getCollection('blog')).sort(
 		box-shadow: var(--box-shadow);
 	}
 	@media (max-width: 720px) {
-		.title {
-			color: rgb(var(--accent));
-		}
 		ul {
 			gap: 0.5em;
 		}
