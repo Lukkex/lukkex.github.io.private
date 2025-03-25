@@ -14,7 +14,7 @@ A name!
 
 Of course, it's typically a better practice to name your portfolio something not so mysterious and kind-of haunting...
 
-But I went ahead and did it anyways! 
+But I went ahead and did it anyways!
 
 Sanctum is the name I decided on, as it's still freshly in my mind ever since I made my previous 3D piece (which I had created for my Java/JOGL + OpenGL game engine in one of my classes), whereas the name was "Ghoul's Sanctum" (Ghoul is the name of one of my original characters I plan on using in my web series / upcoming game).
 

@@ -27,6 +27,8 @@
 		0 16px 32px rgba(var(--gray), 33%);
 }
 
+/** FONTS **/
+
 @font-face {
 	font-family: 'Cyber';
 	src: url('/fonts/CyberMegico-BLOMd.otf') format('opentype');
@@ -57,6 +59,21 @@
 }
 
 @font-face {
+	font-family: 'Hipnouma';
+	src: url('/fonts/Hipnouma.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	direction: ltr;
+}
+
+.hipnouma-font {
+	font-family: 'Hipnouma', sans-serif;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-regular.woff') format('woff');
 	font-weight: 400;
@@ -71,11 +88,191 @@
 	font-display: swap;
 }
 
+/** END OF FONTS **/
+
 .center {
 	display: flex;
 	justify-content: center; /* Centers horizontally */
 	align-items: center; /* Centers vertically */
 	height: auto;
+}
+
+.glow {
+    text-shadow: 0 0 10px #000000;
+    animation: glowing 2s infinite ease;
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 15px #FF008A, 0 0 25px #FF008A;
+    }
+    50% {
+        text-shadow: 0 0 1px #000000;
+    }
+    100% {
+        text-shadow: 0 0 15px #FF008A, 0 0 25px #FF008A;
+    }
+}
+
+.glow-rainbow {
+	text-align: center; /* Center the text */
+    animation: rainbowGlow 3s infinite linear, moveRight 5s infinite linear; /* Apply both animations */
+}
+
+@keyframes rainbow-glowing {
+	0% {
+        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff7300, 0 0 20px #fffb00, 0 0 25px #00ff00, 0 0 30px #0000ff, 0 0 35px #8b00ff;
+    }
+    14% {
+        text-shadow: 0 0 5px #ff7300, 0 0 10px #ff7300, 0 0 15px #fffb00, 0 0 20px #fffb00, 0 0 25px #00ff00, 0 0 30px #0000ff, 0 0 35px #8b00ff;
+    }
+    28% {
+        text-shadow: 0 0 5px #fffb00, 0 0 10px #fffb00, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 25px #0000ff, 0 0 30px #8b00ff, 0 0 35px #ff0000;
+    }
+    42% {
+        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #0000ff, 0 0 20px #0000ff, 0 0 25px #8b00ff, 0 0 30px #ff0000, 0 0 35px #ff7300;
+    }
+    57% {
+        text-shadow: 0 0 5px #0000ff, 0 0 10px #0000ff, 0 0 15px #8b00ff, 0 0 20px #8b00ff, 0 0 25px #ff0000, 0 0 30px #ff7300, 0 0 35px #fffb00;
+    }
+    71% {
+        text-shadow: 0 0 5px #8b00ff, 0 0 10px #8b00ff, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff7300, 0 0 30px #fffb00, 0 0 35px #00ff00;
+    }
+    85% {
+        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff7300, 0 0 20px #ff7300, 0 0 25px #fffb00, 0 0 30px #00ff00, 0 0 35px #0000ff;
+    }
+    100% {
+        text-shadow: 0 0 5px #ff7300, 0 0 10px #ff7300, 0 0 15px #fffb00, 0 0 20px #fffb00, 0 0 25px #00ff00, 0 0 30px #0000ff, 0 0 35px #8b00ff;
+    }
+}
+
+.Rainbow-static {
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	color:transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+.Rainbow-flash {
+    background: linear-gradient(in hsl longer hue 90deg, red 0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 3000%, 100%;
+
+    -webkit-animation: rainbowanim 1s linear infinite;
+       -moz-animation: rainbowanim 1s linear infinite;
+            animation: rainbowanim 1s linear infinite;
+}
+
+.Rainbow-dynamic {
+    background: linear-gradient(in hsl longer hue 90deg, red 0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%, 100%;
+
+    -webkit-animation: rainbowanim 1s linear infinite;
+       -moz-animation: rainbowanim 1s linear infinite;
+            animation: rainbowanim 1s linear infinite;
+}
+
+.Rainbow-dynamic-right-slow {
+    background: linear-gradient(in hsl longer hue 90deg, red 0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%, 100%;
+	
+    -webkit-animation: moveright 3s linear infinite;
+}
+
+.Red-dynamic {
+    background: linear-gradient(90deg,#FF0000, #000000, #FF0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%, 100%;
+
+    -webkit-animation: moveright 1s linear infinite;
+}
+
+@keyframes hueChange {
+		0% {
+			filter: hue-rotate(0deg); /* No rotation at the start */
+		}
+		100% {
+			filter: hue-rotate(360deg); /* Full rotation at the end */
+		}
+	}
+
+@keyframes rotateBackgroundCW {
+		0% {
+		transform: rotate(0deg); /* Start at the initial position */
+		}
+		100% {
+		transform: rotate(360deg); /* Rotate to a full circle */
+		}
+	}
+
+@keyframes rotateBackgroundCCW {
+		0% {
+		transform: rotate(360deg); /* Start at the initial position */
+		}
+		100% {
+		transform: rotate(0deg); /* Rotate to a full circle */
+		}
+	}
+
+@-webkit-keyframes rainbowanim {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+@-moz-keyframes rainbowanim {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+@keyframes rainbowanim {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+@-webkit-keyframes moveright {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: -200% 50%;
+    }
+}
+
+@-moz-keyframes moveright {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: -200% 50%;
+    }
+}
+
+@keyframes moveright {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: -200% 50%;
+    }
 }
 
 .smaller-image {
@@ -151,18 +348,21 @@ a {
 a:hover {
 	color: var(--accent);
 }
+
 p {
 	background: linear-gradient(var(--accent-gradient)); /* Gradient from pink to dark purple */
 	-webkit-background-clip: text;  /* Clips the gradient to the text */
 	color: transparent;  /* Makes the actual text color transparent so the background gradient shows through */
 	margin-bottom: 1em;
 }
+
 p code {
 	padding: 2px 5px;
 	color: white;
 	background-color: rgb(var(--accent));
 	border-radius: 2px;
 }
+
 .prose p {
 	margin-bottom: 2em;
 }

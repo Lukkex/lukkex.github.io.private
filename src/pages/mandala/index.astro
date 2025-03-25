@@ -1,0 +1,61 @@
+---
+import Layout from '../../layouts/BlogPost.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import BaseHead from '../../components/BaseHead.astro';
+---
+
+<head>
+	<BaseHead title="The Garden" description=""/>
+</head>
+<Header style="z-index: 2;"/>
+<main style="z-index: 4;">
+	<div class="middle-content">
+		<h1 class = "Red-dynamic hipnouma-font" style="color: white; font-weight: bold;">
+			E N T E R<br/>T H E<br/>M A N D A L A.
+		</h1>
+	</div>
+</main>
+<Footer style="z-index: 2;"/>
+<style>
+	main {
+		position: relative;
+		background-image: url(./madala/mandalaportal.png);
+		background-size: 100vw;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 100vw;
+		width: 100vw;
+		color: white;
+		animation: hueChange 5s infinite;
+	}
+
+	main {
+		position: relative;
+		background-image: url(../../../../public/mandalaportal.png);
+		background-size: 100vw;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 100vw;
+		width: 100vw;
+		color: white;
+		animation: rotateBackgroundCCW 5s infinite linear;
+	}
+
+	.middle-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100vw;
+		height: 11vw;
+		transform: translate(-50%, -50%);
+		background: rgba(0, 0, 0, 0.85);
+		padding: 0.7em;
+		border-radius: 20px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: white;
+		font-size: 0.9vw;
+	}
+</style>

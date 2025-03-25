@@ -8,4 +8,3 @@ heroImage: '/GhoulSanctum.gif'
 Happy Pi day! >:3
 
 This was genuinely one of the most enjoyable and rewarding projects I've ever made; from essentially scratch, I had to create not only this entire world, but its engine as well!
-
