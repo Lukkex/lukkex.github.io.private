@@ -404,7 +404,8 @@
 }
 
 body {
-	font-family: 'Atkinson', sans-serif;
+	font-family: 'KakomiA', monospace;
+	font-weight: 0;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -412,7 +413,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--white));
-	font-size: 20px;
+	font-size: 30px;
 	line-height: 1.7;
 }
 main {
@@ -465,13 +466,6 @@ p {
 	margin-bottom: 1em;
 }
 
-p code {
-	padding: 2px 5px;
-	color: white;
-	background-color: rgb(var(--accent));
-	border-radius: 2px;
-}
-
 .prose p {
 	margin-bottom: 2em;
 }
@@ -490,10 +484,22 @@ img {
 	height: auto;
 	border-radius: 8px;
 }
-code {
+
+.ItemTitle {
+	font-family: '3Dkirieji', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: lighter;
+	background-color: transparent;
 	padding: 2px 5px;
-	color: var(--white);
+	color: white;
+	border-radius: 2px;
+}
+
+code {
+	font-family: '3Dkirieji', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: lighter;
 	background-color: rgb(var(--accent));
+	padding: 2px 5px;
+	color: white;
 	border-radius: 2px;
 }
 pre {

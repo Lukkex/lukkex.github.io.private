@@ -1,8 +1,9 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
 import HeaderLink from '../components/HeaderLink.astro';
+import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Vine from '../components/svg/Vine.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -12,6 +13,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
+		<div class="rainbow">
 		<Header />
 		<main>
 			<div class="center">
@@ -23,21 +25,67 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			</p>
 			<p>
 				This is the official site of <a href="https://github.com/Lukkex">Lukkex</a>; I am also well-known by the name of Kaiju, or <code>K4IJU</code>. Here, you may find
-				a collection of my art pieces, coding projects, philosophical works, and more.
+				a collection of my art, coding projects, philosophical works, and more.
 			</p>
-			<p>WIP & Upcoming additions to this site:</p>
-			<ul>
-				<li><code style="background: rgb(26, 26, 26);"><HeaderLink href="/caelum" class="BW-right">Caelum Anonymous</HeaderLink></code><p class="BW-right" style="font-size: 15px;"><i>~ A chatroom side to this website</i></p></li>
-				<li><code style="background: rgb(21, 12, 53);"><HeaderLink href="/mandala" class="Rainbow-right">The Mandala</HeaderLink></code><p class="Rainbow-flash-slow" style="font-size: 15px;"><i>~ A psychedelic experience [EPILEPSY WARNING]</i></p></li>
-				<li><code style="background: rgb(29, 36, 23);"><HeaderLink href="/garden" class="Green-right">Garden Sanctuary</HeaderLink></code><p class="Green-right" style="font-size: 15px;"><i>~ A spiritual experience</i></p></li>
+			<p>WIP & upcoming additions to this site:</p>
+			<ul class = "List-Container">
+				<li><code class="ItemTitle"><HeaderLink href="/caelum" class="BW-right">Caelum Anonymous</HeaderLink></code><p class="BW-right" style="font-size: 15px;"><i>~ A chatroom side to this website</i></p></li>
+				<li><code class="ItemTitle"><HeaderLink href="/mandala" class="Rainbow-right">The Mandala</HeaderLink></code><p class="Rainbow-flash-slow" style="font-size: 15px;"><i>~ A psychedelic experience [EPILEPSY WARNING]</i></p></li>
+				<li><code class="ItemTitle"><HeaderLink href="/garden" class="Green-right">Garden Sanctuary</HeaderLink></code><p class="Green-right" style="font-size: 15px;"><i>~ A spiritual experience</i></p></li>
 			</ul>
-			<p>Upcoming projects:</p>
+			<p>Current / upcoming projects:</p>
 			<ul>
-				<li><code>[Unnamed] web series</code> detailing my worldview / philosophy <br/>(to describe it in two words: Unconditional Love)<br/><span class="indent"/><ul><i>"There are no villains in life; merely lost souls, <br/><span class="indent">trying to find their way back to the stillness."<br/><span class="indent"/>- Yours truly</span></i></ul></li>
+				<li><code>3D web series</code> detailing my worldview / philosophy <br/>(to describe it in two words: Unconditional Love)<br/><span class="indent"/><ul><i>"There are no villains in life; merely lost souls, <br/><span class="indent">trying to find their way back to the stillness."<br/><span class="indent"/>- Yours truly</span></i></ul></li>
 				<br/>
 				<li>The aforementioned web series will also be used as cutscenes as apart of a <code>co-op story-based action game</code> with just as much symbolism and love put into it (if not even more) than the series itself, as it will essentially be taking the series to a whole 'nother level.</li>
 			</ul>
 		</main>
 		<Footer />
+	</div>
 	</body>
 </html>
+
+<style>
+	body {
+		background-size: 100vw;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 100vw;
+		width: 100vw;
+	}
+	.rainbow {
+		background-image: url(/Vines.png);
+		background-repeat: no-repeat;
+		animation: hueChange 180s linear infinite;
+	}
+	img {
+		width: 33vw;
+		min-width: 430px;
+		height: auto;
+	}
+
+	.List-Container {
+		border-color: white;
+		border-width: 20px;
+		border-radius: 20px;
+	}
+
+	.left-svg, .right-svg {
+		color: #FF008A;
+		position: absolute;
+		top: 50%;
+		transform: rotate(90deg) translateY(-70%);
+		width: 100vw;
+		height: 100vh;
+		z-index: 1;
+	}
+
+	.left-svg {
+		left: 5%;
+	}
+
+	.right-svg {
+		right: 5%;
+		transform: rotate(-90deg) translateY(-70%) scaleX(-1);
+	}
+</style>
