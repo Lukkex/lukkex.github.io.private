@@ -33,11 +33,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			<p>WIP & upcoming pages to this site:</p>
 			<br/>
 			<div class = "centering-container-noflex">
-				<div class = "CaelumTitle"><p><HeaderLink href="/caelum" class="BW-right ItemTitle"><u>Caelum Anonymous</u></HeaderLink></p><p class="BW-right"><i>~ A chatroom side to this website</i></p></div>
+				<div class = "CaelumTitle"><p><HeaderLink href="/caelum" class="BW-right ItemTitle">Caelum Anonymous</HeaderLink></p><p class="BW-right">[ A chatroom side to this website ]</p></div>
 				<br/>
-				<div class = "MandalaTitle"><p><HeaderLink href="/mandala" class="Rainbow-right ItemTitle"><u>The Mandala</u></HeaderLink></p><p class="Rainbow-flash-slow"><i>~ A psychedelic experience [EPILEPSY WARNING]</i></p></div>
+				<div class = "MandalaTitle"><p><HeaderLink href="/mandala" class="Rainbow-right ItemTitle">The Mandala</HeaderLink></p><p class="Rainbow-flash-slow">[ A psychedelic experience [EPILEPSY WARNING] ]</p></div>
 				<br/>
-				<div class=" GardenTitle"><p><HeaderLink href="/garden" class="Green-right ItemTitle"><u>Garden Sanctuary</u></HeaderLink></p><p class="Green-right"><i>~ A spiritual experience</i></p></div>
+				<div class=" GardenTitle"><p><HeaderLink href="/garden" class="Green-right ItemTitle">Garden Sanctuary</HeaderLink></p><p class="Green-right">[ A spiritual experience ]</p></div>
 			</div>
 			<br/>
 			<br/>
@@ -77,11 +77,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 	.ItemTitle {
 		transition: text-shadow 0.3s ease-in-out;
+		text-decoration: underline;
 	}
 
 	.ItemTitle:hover {
 		background-image: url(sanctumlogo.gif);
 		text-shadow: 0 0 10px rgba(255, 0, 138, 1), 0 0 20px rgba(255, 0, 138, 1), 0 0 30px rgba(255, 0, 138, 1);
+		text-decoration: none;
 	}
 
 	.CaelumTitle:hover p {
