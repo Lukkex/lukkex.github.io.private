@@ -9,32 +9,59 @@ import SiteLogo from "./logos/SiteLogo.astro";
 
 <header>
 	<nav>
-		<h2><a href="/"><SiteLogo/></a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Projects</HeaderLink>
-			<HeaderLink href="/journal">Journal</HeaderLink>
-			<HeaderLink href="/mandala" class="Rainbow-dynamic-right-slow">Mandala</HeaderLink>
-			<HeaderLink href="/garden">Garden</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
+		<div class = "left">
+			<h2><a href="/"><SiteLogo/></a></h2>
 		</div>
-		<div class="social-links">
-			<a href="https://www.instagram.com/iokaiju" target="_blank">
-				<span class="sr-only">Go to Kaiju's Instagram</span>
-				<InstaLogo/>
-			</a>
-			<a href="https://www.youtube.com/@K4IJU" target="_blank">
-				<span class="sr-only">Go to the K4IJU YouTube channel</span>
-				<YouTubeLogo/>
-			</a>
-			<a href="https://github.com/Lukkex" target="_blank">
-				<span class="sr-only">Go to Lukkex's GitHub repo</span>
-				<GithubLogo/>
-			</a>
+		<div class = "middle">
+			<div class="internal-links">
+				<HeaderLink href="/">Home</HeaderLink>
+				<HeaderLink href="/blog">Projects</HeaderLink>
+				<HeaderLink href="/journal">Journal</HeaderLink>
+				<HeaderLink href="/about">About</HeaderLink>
+			</div>
+		</div>
+		<div class = "right">
+			<div class="social-links">
+				<a href="https://www.instagram.com/iokaiju" target="_blank">
+					<span class="sr-only">Go to Kaiju's Instagram</span>
+					<InstaLogo/>
+				</a>
+				<a href="https://www.youtube.com/@K4IJU" target="_blank">
+					<span class="sr-only">Go to the K4IJU YouTube channel</span>
+					<YouTubeLogo/>
+				</a>
+				<a href="https://github.com/Lukkex" target="_blank">
+					<span class="sr-only">Go to Lukkex's GitHub repo</span>
+					<GithubLogo/>
+				</a>
+			</div>
 		</div>
 	</nav>
 </header>
 <style>
+	.left {
+		flex: 1; /* Each of these takes up one third of the screen */
+		display: flex;
+		align-items: left;
+		justify-content: left;
+		transform: translateX(30px);
+	}
+
+	.middle {
+		flex: 1; /* Each of these takes up one third of the screen */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.right {
+		flex: 1; /* Each of these takes up one third of the screen */
+		display: flex;
+		align-items: right;
+		justify-content: right;
+		transform: translateX(-30px);
+	}
+
 	header {
 		margin: 0;
 		padding: 0 1em;

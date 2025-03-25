@@ -74,12 +74,58 @@
 }
 
 @font-face {
+	font-family: '3Dkirieji';
+	src: url('/fonts/3Dkirieji.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	direction: ltr;
+}
+
+.kirieji-font {
+	font-family: '3Dkirieji', sans-serif;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'KakomiA';
+	src: url('/fonts/KakomiA.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	direction: ltr;
+}
+
+.kakomiA-font {
+	font-family: 'KakomiA', sans-serif;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'KakomiB';
+	src: url('/fonts/KakomiB.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	direction: ltr;
+}
+
+.kakomiB-font {
+	font-family: 'KakomiB', sans-serif;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-regular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-bold.woff') format('woff');
@@ -146,6 +192,16 @@
     }
 }
 
+.Glitched-Background {
+	background-image: url(../../public/glitch1.gif);
+	background-repeat:repeat-y;
+	background-size: 200%, 100%;
+	color:transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	animation: movedown 2s linear infinite;
+}
+
 .Rainbow-static {
 	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
 	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
@@ -165,6 +221,17 @@
             animation: rainbowanim 1s linear infinite;
 }
 
+.Rainbow-flash-slow {
+    background: linear-gradient(in hsl longer hue 90deg, red 0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 3000%, 100%;
+
+    -webkit-animation: rainbowanim 3s linear infinite;
+       -moz-animation: rainbowanim 3s linear infinite;
+            animation: rainbowanim 3s linear infinite;
+}
+
 .Rainbow-dynamic {
     background: linear-gradient(in hsl longer hue 90deg, red 0 100%);
     -webkit-background-clip: text;
@@ -176,8 +243,26 @@
             animation: rainbowanim 1s linear infinite;
 }
 
-.Rainbow-dynamic-right-slow {
+.Rainbow-right {
     background: linear-gradient(in hsl longer hue 90deg, red 0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%, 100%;
+	
+    -webkit-animation: moveright 3s linear infinite;
+}
+
+.Green-right {
+    background: linear-gradient(90deg, #7bff00, #386300, #7bff00, #474013, #7bff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%, 100%;
+	
+    -webkit-animation: moveright 3s linear infinite;
+}
+
+.BW-right {
+    background: linear-gradient(90deg, #ffffff, #000000, #ffffff, #000000, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200%, 100%;
@@ -275,8 +360,32 @@
     }
 }
 
+@keyframes moveup {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes movedown {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
 .smaller-image {
 	width: 12vw;
+	height: auto;
+}
+
+.large-image {
+	min-width: 200px;
+	width: 20vw;
 	height: auto;
 }
 
