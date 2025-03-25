@@ -94,6 +94,11 @@ import SiteLogo from "./logos/SiteLogo.astro";
 		color: var(--white);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
+		transition: text-shadow 0.3s ease-in-out;
+	}
+
+	nav a:hover {
+		text-shadow: 0 0 10px rgba(255, 0, 138, 1), 0 0 20px rgba(255, 0, 138, 1), 0 0 30px rgba(255, 0, 138, 1);
 	}
 
 	nav a.active {
@@ -103,7 +108,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	}
 
 	/* Styles for phones */
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 768px) {
 		/* Mobile-specific styles :3 */
 		.left {
 			flex: 1;

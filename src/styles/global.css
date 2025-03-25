@@ -136,6 +136,68 @@
 
 /** END OF FONTS **/
 
+/** BACKGROUNDS **/
+
+.rainbow-vines {
+	background-image: url(/Vines.png);
+	background-repeat: no-repeat;
+	background-size: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vw;
+	width: 100%;
+	animation: hueChange 180s linear infinite;
+}
+
+.rainbow-thorns {
+	background-image: url(../Thorns.png);
+	background-repeat: no-repeat;
+	background-size: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vw;
+	width: 100%;
+	animation: hueChange 180s linear infinite;
+}
+
+.rainbow-glitch {
+	background-image: url(../glitch1.gif);
+	background-repeat: no-repeat;
+	background-size: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vw;
+	width: 100%;
+	animation: hueChange 180s linear infinite;
+}
+
+@media only screen and (max-width: 0px) {
+	.rainbow-vines {
+		background-image: url(/Vines.png);
+		background-repeat: no-repeat;
+		background-size: 200vw;
+		background-position: left;
+		background-repeat: no-repeat;
+		height: 250vw;
+		width: 100%;
+		animation: hueChange 180s linear infinite;
+	}
+}
+
+/** END OF BACKGROUNDS **/
+
+
+.centering-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.centering-container-noflex {
+	justify-content: center;
+	align-items: center;
+}
+
 .center {
 	display: flex;
 	justify-content: center; /* Centers horizontally */
@@ -495,7 +557,7 @@ img {
 }
 
 code {
-	font-family: '3Dkirieji', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: 'KakomiA', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-weight: lighter;
 	background-color: rgb(var(--accent));
 	padding: 2px 5px;
