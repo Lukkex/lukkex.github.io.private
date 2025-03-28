@@ -466,7 +466,7 @@
 }
 
 body {
-	font-family: 'KakomiA', monospace;
+	font-family: monospace;
 	font-weight: 0;
 	margin: 0;
 	padding: 0;
@@ -475,7 +475,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--white));
-	font-size: 30px;
+	font-size: 25px;
 	line-height: 1.7;
 }
 @media (max-width: 768px) {
@@ -562,7 +562,7 @@ img {
 }
 
 code {
-	font-family: 'KakomiA', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: monospace, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-weight: lighter;
 	background-color: rgb(var(--accent));
 	padding: 2px 5px;
