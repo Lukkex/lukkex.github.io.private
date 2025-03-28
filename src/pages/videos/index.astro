@@ -1,0 +1,118 @@
+---
+import Layout from '../../layouts/Page.astro';
+---
+
+<Layout
+	title="Videos"
+	description=""
+	pubDate={new Date('March 24 2025')}
+	heroImage="/owl.jpg"
+>
+
+	<div class="center">
+		<div class="vids">
+			<h1 class=" ItemTitle"><code>VIDEOS</code></h1>
+
+			<p>
+				<code>
+					Soon my content will start being hosted on this site, rather than just YouTube!<br/><br/>For now, here are a few of my most recent videos.<br/><br/><code>**MAJOR EPILEPSY WARNING.**</code>
+				</code>
+			</p>
+			<div class="Videos">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/4TzVOj7sTI4?si=J0E12YrOsv7NtRuV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/F-WpDjNZt8c?si=qSLHQnl0dm7uKHCa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/FjnF1GuLI9s?si=AJQ1bbjYpxC7FZ_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/NEm5LVRSpos?si=Gbl8yf97ZPdmVNoL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/a2envBEs11Y?si=-RGWNNdegw9U48ZO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/3_5WEz5J4H4?si=nruY9wUUPZs2-eiF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/p3zPr8tkQGM?si=E8fRU7aiLicMMTMC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/U1Wz9DSgOpA?si=3L1Gyvh9Szbd49H_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/c4VDpSM6HnU?si=3ApHAZdjhOwJ_jAr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.vids {
+		background-image: url(../sigil.png);
+		position: relative;
+		background-size: 100vw;
+		height: 200vw;
+		width: 100vw;
+		background-repeat: no-repeat;
+	}
+
+	h1 {
+		font-family: 'KakomiA', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+		font-size: 8vw;
+		font-weight: 1000;
+	}
+
+	code{
+		background-color: black;
+	}
+
+	p {
+		background-color: black;
+		text-align: center;
+		font-family: 'KakomiB';
+		font-size: 30px;
+		color: red;
+	}
+
+	.Videos {
+		width: 100vw;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 50px;
+		justify-items: center;
+		align-items: start;
+	}
+
+	.Videos iframe {
+		width: 40vw;
+		height: 24vw;
+		border: 2px solid white;
+		border-radius: 20px;
+	}
+
+	iframe:hover {
+		box-shadow: var(--box-shadow);
+	}
+
+	iframe:playing {
+		box-shadow: var(--box-shadow);
+	}
+
+	@media only screen and (max-width: 685px) {
+		.Videos {
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+			justify-items: center;
+		}
+
+		.Videos iframe {
+			border: 2px solid white;
+			border-radius: 20px;
+			width: 99vw;
+		}
+
+		p {
+			background-color: black;
+			text-align: center;
+			font-family: 'KakomiB';
+			font-size: 15px;
+			color: red;
+		}
+
+		.Videos {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 50px;
+			justify-items: center;
+			align-items: start;
+		}
+	}
+</style>

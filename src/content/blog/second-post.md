@@ -2,7 +2,7 @@
 title: "Gh☆ul's Sanctum"
 description: 'Java/JOGL + OpenGL Engine & Models created in Blender 4.1'
 pubDate: 'Mar 14 2025'
-heroImage: '/GhoulSanctum.gif'
+heroImage: 'project-covers/GhoulSanctum.gif'
 ---
 
 Happy Pi day! >:3

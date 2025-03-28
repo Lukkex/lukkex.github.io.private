@@ -7,20 +7,34 @@ import GithubLogo from "./logos/Github.astro";
 import SiteLogo from "./logos/SiteLogo.astro";
 ---
 
-<header>
+<header class="stick">
 	<div class="mobile-logo centering-container">
-		<a href="/"><SiteLogo/></a>
+		<a href="/"><img src="./sanctumlogostill.gif" width="200"></a>
 	</div>
 	<nav>
 		<div class = "left">
 			<h2><a href="/"><SiteLogo/></a></h2>
 		</div>
-		<div class = "middle">
-			<div class="internal-links">
-				<HeaderLink href="/">Home</HeaderLink>
-				<HeaderLink href="/blog">Projects</HeaderLink>
-				<HeaderLink href="/journal">Journal</HeaderLink>
-				<HeaderLink href="/about">About</HeaderLink>
+		<div class = "desktop">
+			<div class = "middle">
+				<div class="internal-links">
+					<HeaderLink href="/">Home</HeaderLink>
+					<HeaderLink href="/videos">Videos</HeaderLink>
+					<HeaderLink href="/blog">Projects</HeaderLink>
+					<HeaderLink href="/journal">Journal</HeaderLink>
+					<HeaderLink href="/about">About</HeaderLink>
+				</div>
+			</div>
+		</div>
+		<div class = "mobile">
+			<div class = "middle mobile">
+				<div class="internal-links">
+					<HeaderLink href="/">HOME</HeaderLink>
+					<HeaderLink href="/videos">VIDEOS</HeaderLink>
+					<HeaderLink href="/blog">PROJECTS</HeaderLink>
+					<HeaderLink href="/journal">JOURNAL</HeaderLink>
+					<HeaderLink href="/about">ABOUT</HeaderLink>
+				</div>
 			</div>
 		</div>
 		<div class = "right">
@@ -40,6 +54,14 @@ import SiteLogo from "./logos/SiteLogo.astro";
 <style>
 	.mobile-logo {
 		display: none;
+	}
+
+	.mobile{
+		display: none;
+	}
+
+	.desktop{
+		display: contents;
 	}
 
 	.left {
@@ -91,8 +113,8 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	}
 
 	nav a {
-		padding: 1em 0.5em;
-		font-size: 1.5vw;
+		padding: 0.3em 0.25vw;
+		font-size: 1.3vw;
 		font-family: '3Dkirieji', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 		color: var(--white);
 		border-bottom: 4px solid transparent;
@@ -111,13 +133,21 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	}
 
 	/* Styles for phones */
-	@media only screen and (max-width: 575px) {
+	@media only screen and (max-width: 685px) {
 		/* Mobile-specific styles :3 */
 		.mobile-logo {
 			display:flex;
+			padding-top: 20px;
 			width: auto;
-			height: 5vh;
-			transform: translateY(12px);
+			height: 9vh;
+		}
+
+		.desktop {
+			display: none;
+		}
+
+		.mobile {
+			display: contents;
 		}
 
 		.left {
@@ -131,6 +161,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 
 		.middle {
 			flex: 1;
+			padding-top: 0px;
 			width: 100vw;
 			display: flex;
 			align-items: center;
@@ -153,8 +184,8 @@ import SiteLogo from "./logos/SiteLogo.astro";
 		}
 
 		nav a {
-		padding: 1em 0.5em;
-		font-size: 3vw;
+		padding: 1em 0.15em;
+		font-size: 2.5vw;
 		font-weight: 800;
 		font-family: '3Dkirieji', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 		color: var(--white);
@@ -181,6 +212,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 		padding: 0 1em;
 		background-image: linear-gradient(var(--black-gradient));
 		border: 1px solid rgba(255, 255, 255, 0.336);
+		border-top: none;
 		border-bottom-left-radius: 8vw;
 		border-bottom-right-radius: 8vw;
 		box-shadow: 10px 10px 20px rgba(var(--black), 100%);
