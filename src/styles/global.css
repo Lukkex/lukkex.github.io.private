@@ -478,6 +478,11 @@ body {
 	font-size: 30px;
 	line-height: 1.7;
 }
+@media (max-width: 768px) {
+	body {
+		font-family: monospace;
+	}
+}
 main {
 	width: 720px;
 	max-width: calc(100% - 2em);
@@ -581,8 +586,7 @@ hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
 }
-@media (max-width: 720px) {
-}
+
 
 .sr-only {
 	border: 0;
