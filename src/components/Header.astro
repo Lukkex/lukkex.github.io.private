@@ -1,4 +1,6 @@
 ---
+import Image from "astro:assets";
+import sanctumLogo from "../sanctumlogostill.gif";
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 import InstaLogo from "./logos/Insta.astro";
@@ -9,7 +11,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 
 <header class="stick">
 	<div class="mobile-logo centering-container">
-		<a href="/"><img src="./sanctumlogostill.gif" width="200"></a>
+		<a href="/"><img src={sanctumLogo.src} width="200"/></a>
 	</div>
 	<nav>
 		<div class = "left">
