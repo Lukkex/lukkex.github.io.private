@@ -2,7 +2,7 @@
 title: 'Creating the Sanctum Logo in Blender 4.1'
 description: 'How I created the Sanctum Logo using Blender 4.1'
 pubDate: 'Mar 24, 2025'
-heroImage: 'project-covers/SanctumCreation.png'
+heroImage: '/project-images/project-covers/SanctumCreation.png'
 ---
 
 Hello!
