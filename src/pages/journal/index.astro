@@ -16,8 +16,16 @@ const entries = (await getCollection('journal')).sort(
 	<head>
 		<BaseHead title="Kaiju's Journal" description={SITE_DESCRIPTION} />
 		<style>
+			.center img {
+				width: 25vw;
+			}
+
+			.center {
+				text-align: center;
+			}
+
 			main {
-				width: 960px;
+				width: 100vw;
 			}
 			ul {
 				display: flex;
@@ -40,7 +48,7 @@ const entries = (await getCollection('journal')).sort(
 				text-align: center;
 			}
 			ul li:first-child img {
-				width: 100%;
+				width: 40%;
 			}
 			ul li:first-child .title {
 				font-size: 2.369rem;
@@ -63,23 +71,34 @@ const entries = (await getCollection('journal')).sort(
 			}
 			ul li a:hover h4,
 			ul li a:hover .date {
-				color: rgb(var(--accent));
+				color: rgb(var(--white));
 			}
 			ul a:hover img {
 				box-shadow: var(--box-shadow);
 			}
 			@media (max-width: 720px) {
+				.center img {
+					width: 300px;
+				}
+				ul li:first-child img {
+					width: 100%;
+				}
+
 				ul {
 					gap: 0.5em;
 				}
-.title {color: rgb(var(--accent));}
+
+				.title {color: rgb(var(--white));}
+				
 				ul li {
 					width: 100%;
 					text-align: center;
 				}
+
 				ul li:first-child {
 					margin-bottom: 0;
 				}
+
 				ul li:first-child .title {
 					font-size: 1.563em;
 				}
