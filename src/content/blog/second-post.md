@@ -2,7 +2,7 @@
 title: "Gh☆ul's Sanctum"
 description: 'Java/JOGL + OpenGL Engine & Models created in Blender 4.1'
 pubDate: 'Mar 14 2025'
-heroImage: 'project-images/project-covers/GhoulSanctum.gif'
+heroImage: '/project-images/project-covers/GhoulSanctum.gif'
 ---
 
 <h3 class="Rainbow-right">Overview</h3>
