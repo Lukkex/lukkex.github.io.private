@@ -38,7 +38,7 @@
 }
 
 .cyber-font {
-	font-family: 'Cyber', sans-serif;
+	font-family: 'Cyber', monospace;
 	font-style: normal;
 	font-display: swap;
 }
@@ -53,7 +53,7 @@
 }
 
 .maskdown-font {
-	font-family: 'Maskdown', sans-serif;
+	font-family: 'Maskdown', monospace;
 	font-style: normal;
 	font-display: swap;
 }
@@ -67,8 +67,23 @@
 	direction: ltr;
 }
 
+.pixelmax-font {
+	font-family: 'Pixelmax', monospace;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Pixelmax';
+	src: url('/fonts/Pixelmax.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	direction: ltr;
+}
+
 .hipnouma-font {
-	font-family: 'Hipnouma', sans-serif;
+	font-family: 'Hipnouma', monospace;
 	font-style: normal;
 	font-display: swap;
 }
@@ -83,7 +98,7 @@
 }
 
 .kirieji-font {
-	font-family: '3Dkirieji', sans-serif;
+	font-family: '3Dkirieji', monospace;
 	font-style: normal;
 	font-display: swap;
 }
@@ -98,7 +113,7 @@
 }
 
 .kakomiA-font {
-	font-family: 'KakomiA', sans-serif;
+	font-family: 'KakomiA', monospace;
 	font-style: normal;
 	font-display: swap;
 }
@@ -113,7 +128,52 @@
 }
 
 .kakomiB-font {
-	font-family: 'KakomiB', sans-serif;
+	font-family: 'KakomiB', monospace;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oxygene', monospace;
+	src: url('/fonts/Oxygene.TTF') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	direction: ltr;
+}
+
+.oxygene-font {
+	font-family: 'Oxygene';
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'PixelPurl', monospace;
+	src: url('/fonts/PixelPurl.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	direction: ltr;
+}
+
+.pixel-font {
+	font-family: 'PixelPurl';
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lunch', monospace;
+	src: url('/fonts/lunchds.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	direction: ltr;
+}
+
+.lunch-font {
+	font-family: 'Lunch';
 	font-style: normal;
 	font-display: swap;
 }
@@ -332,7 +392,7 @@
     -webkit-animation: moveright 3s linear infinite;
 }
 
-.Red-dynamic {
+.Red-right {
     background: linear-gradient(90deg,#FF0000, #000000, #FF0000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -440,6 +500,21 @@
     }
 }
 
+@keyframes invert {
+	0% {
+		filter: invert(0);
+	}
+
+	50% {
+		filter: invert(1);
+	}
+
+	100% {
+		filter: invert(0);
+	}
+	
+}
+
 .smaller-image {
 	width: 12vw;
 	height: auto;
@@ -466,7 +541,7 @@
 }
 
 body {
-	font-family: monospace;
+	font-family: "Pixelmax";
 	font-weight: 0;
 	margin: 0;
 	padding: 0;
@@ -559,7 +634,7 @@ img {
 }
 
 .ItemTitle {
-	font-family: '3Dkirieji', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: '3Dkirieji', monospace;
 	font-weight: lighter;
 	background-color: transparent;
 	padding: 2px 5px;
@@ -568,7 +643,7 @@ img {
 }
 
 code {
-	font-family: monospace, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: "Pixelmax", monospace;
 	font-weight: lighter;
 	background-color: rgb(var(--accent));
 	padding: 2px 5px;
