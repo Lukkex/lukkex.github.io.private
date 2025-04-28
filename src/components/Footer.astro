@@ -3,11 +3,20 @@ import InstaLogo from "./logos/Insta.astro";
 import YouTubeLogo from "./logos/YouTube.astro";
 import GithubLogo from "./logos/Github.astro";
 import SiteLogo from "./logos/SiteLogo.astro";
+import CommentSection from "./CommentSection.astro";
 
 const today = new Date();
 ---
 
 <footer>
+	<body>
+		<main>
+			<br/>
+			<CommentSection/>
+			<br/>
+		</main>
+	</body>
+
 	&copy; {today.getFullYear()} Akaila B. All rights reserved.
 	<div class="social-links">
 	<!--
