@@ -48,7 +48,7 @@ Here, you enter how many (real human) players will be playing in the game.
 
 <img src="/project-images/voyager8.png"/>
 
-After entering how many players there will be, you will now each have a name and start at 100 HP.
+After entering how many players there will be (with the max being 10), you will now each have a name and start at 100 HP.
 
 The order goes from the lowest number to the last (sorry to whoever goes last, you kind of have a disadvantage there haha).
 
