@@ -21,7 +21,7 @@ Pretty Edgar-Allen-Poe-esk, ain't it?
 
 No? 
 
-Eh, well at least I tried. ;)
+Eh, well at least I tried. ;3
 
 After hitting Enter, it brings you to this next screen:
 
