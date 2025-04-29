@@ -9,7 +9,8 @@ heroImage: '/project-images/voyager4.png'
 
 Here, I will sharing some screenshots from my game I created back in Fall of 2022 for my UNIX course's final project. Just thinking back on this project fills me with such passion and inspiration, I genuinely loved creating this little game so, so very much. :)
 
-If you would like to try it out for yourself, <a href="https://github.com/Lukkex/VoyagersUnixGame">here is the UNIX file.</a>
+If you would like to try it out for yourself, 
+<code><i><a href="https://github.com/Lukkex/VoyagersUnixGame">here is the UNIX file.</a></i></code>
 
 To begin, I will show you the initial screen upon running it:
 
