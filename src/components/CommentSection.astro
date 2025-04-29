@@ -1,5 +1,5 @@
 <div style="width: 100%; display: flex; justify: center; align-items: center;">
-    <section class="giscus" style="width: 50vw; display: flex; justify: center; align-items: center;"></section>
+    <section class="giscus" style="display: flex; justify: center; align-items: center;"></section>
 </div>
 
 <script src="https://giscus.app/client.js"
@@ -18,3 +18,14 @@ data-loading="lazy"
 crossorigin="anonymous"
 async>
 </script>
+<style>
+    .giscus {
+        width: 100%;
+    }
+
+    @media (max-width: 768px){
+        .giscus {
+            width: 100%;
+        }
+    }
+</style>
