@@ -1,7 +1,7 @@
 ---
 title: "NEW REALM: BLENDED DREAMS"
 description: ''
-pubDate: 'Apr 29, 2025'
+pubDate: 'May 7, 2025'
 heroImage: '/project-images/project-covers/newrealm.jpg'
 ---
 
