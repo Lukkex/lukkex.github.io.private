@@ -1,5 +1,5 @@
 ---
-title: "PANPSYKHISM: THE NEW REALM"
+title: "PANPSYCHISM: THE NEW REALM"
 description: ''
 pubDate: 'May 7, 2025'
 heroImage: '/project-images/project-covers/newrealm.jpg'
