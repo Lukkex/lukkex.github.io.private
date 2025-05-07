@@ -2,7 +2,7 @@
 title: "My Game Project, New Realm"
 description: ''
 pubDate: 'Apr 29, 2025'
-heroImage: '/project-images/project-covers/checkback.png'
+heroImage: '/project-images/project-covers/newrealm.jpg'
 ---
 
 Check back soon for full start-to-finish details on my process with my latest game!
