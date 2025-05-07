@@ -1,9 +1,11 @@
 ---
-title: "NEW REALM: Blended Dreams"
+title: "NEW REALM: BLENDED DREAMS"
 description: ''
 pubDate: 'Apr 29, 2025'
 heroImage: '/project-images/project-covers/newrealm.jpg'
 ---
+
+(Title is W.I.P.)
 
 Check back soon for full start-to-finish details on my process with my latest OpenGL-based game!
 
