@@ -1,4 +1,4 @@
-Heaven is Now. The present is eternal. 
+Heaven is Now. The present is eternal.
 
 All is beautiful. All is one.
 
