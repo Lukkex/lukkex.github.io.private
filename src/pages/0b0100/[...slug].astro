@@ -1,0 +1,21 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import PanpsychismEntry from '../../layouts/PanpsychismEntry.astro';
+import { render } from 'astro:content';
+
+export async function getStaticPaths() {
+	const entries = await getCollection('Panpsychism');
+	return entries.map((entry) => ({
+		params: { slug: entry.id },
+		props: entry,
+	}));
+}
+type Props = CollectionEntry<'Panpsychism'>;
+
+const post = Astro.props;
+const { Content } = await render(post);
+---
+
+<PanpsychismEntry {...post.data}>
+	<Content />
+</PanpsychismEntry>

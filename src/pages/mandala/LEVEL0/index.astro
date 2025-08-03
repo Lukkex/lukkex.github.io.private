@@ -7,6 +7,7 @@ import BaseHead from '../../../components/BaseHead.astro';
 </head>
 <body>	
 	<div class="wrapper">
+		<a href="/0b0100" class="invisible-box"></a>
 		<svg class="triangle-canvas" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
 			<polygon class="triangle triangle-1" points="500,200 759,650 241,650" />
 			<polygon class="triangle triangle-2" points="500,200 759,650 241,650" />
@@ -59,6 +60,17 @@ import BaseHead from '../../../components/BaseHead.astro';
 	</main>
 </body>
 <style>
+	.invisible-box {
+        width: 1vw;
+        height: 1vw;
+        position: absolute;
+        top: 444px; /* Adjust as needed */
+        left: 444px; /* Adjust as needed */
+        opacity: 0;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
 	.eye {
 		width: 40vw;
 		animation:

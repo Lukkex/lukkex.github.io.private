@@ -29,4 +29,18 @@ const journal = defineCollection({
 	}),
 });
 
-export const collections = { blog, journal };
+const Panpsychism = defineCollection({
+	// Load Markdown and MDX files in the `src/content/Panpsychism/` directory.
+	loader: glob({ base: './src/content/0b0100', pattern: '**/*.{md,mdx}' }),
+	// Type-check frontmatter using a schema
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		// Transform string to Date object
+		pubDate: z.coerce.date(),
+		updatedDate: z.coerce.date().optional(),
+		heroImage: z.string().optional(),
+	}),
+});
+
+export const collections = { blog, journal, Panpsychism };
