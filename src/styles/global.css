@@ -407,6 +407,15 @@
     -webkit-animation: moveright 3s linear infinite;
 }
 
+.BW-right2 {
+    background: linear-gradient(5deg, var(--accent-gradient), #ffffff, var(--accent-gradient));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%, 100%;
+	
+    -webkit-animation: moveright 3s linear infinite;
+}
+
 .Red-right {
     background: linear-gradient(90deg,#FF0000, #000000, #FF0000);
     -webkit-background-clip: text;

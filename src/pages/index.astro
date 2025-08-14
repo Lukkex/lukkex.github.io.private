@@ -5,7 +5,11 @@ import CommentSection from "../components/CommentSection.astro";
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Vine from '../components/svg/Vine.astro';
+import fs from 'fs';
+import path from 'path';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+const artDirectory = path.resolve('public/art'); 
+const artFiles = fs.readdirSync(artDirectory).filter(file => file.endsWith('.png') || file.endsWith('.jpg') || file.endsWith('.gif'));
 ---
 
 <!doctype html>
@@ -31,6 +35,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			<br/>
 			<hr/>
 			<br/>
+			<h2 class="BW-right2 kirieji-font center">Art Gallery</h2>
+			<br/>
+			<div class="art-gallery">
+				{artFiles.map(file => (
+					<div class="art-item">
+						<img src={`/art/${file}`} alt={file} class="art-image" />
+						<br/>
+						<p>{file.toUpperCase()}</p>
+					</div>
+				))}
+			</div>
 			<p>WIP & upcoming pages to this site:</p>
 			<br/>
 			<div class = "centering-container-noflex">
@@ -74,7 +89,87 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	main {
 		font-family: "Pixelmax";
 	}
-	
+
+	.art-gallery {
+		display: flex;
+		flex-wrap: wrap;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 16px;
+		padding: 16px;
+		margin: 0; 
+	}
+
+	.art-item {
+		width: 100%;
+
+		margin-bottom: 1rem;
+		text-align: center;
+		transition: 0.2s ease;
+	}
+
+
+	.art-item:first-child {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	.art-item:first-child img {
+		width: 100%;
+		border-radius: 12px;
+	}
+
+	.art-item img {
+		margin-bottom: 0.5rem;
+		width: 100%;
+		border: 1px solid white;
+		border-radius: 12px;
+		box-shadow: var(--box-shadow);
+		transition: transform 0.2s ease, box-shadow 0.3s ease-in-out;
+	}
+
+	.art-item img:hover {
+		box-shadow: var(--box-shadow);
+		transform: scale(1.05);
+	}
+
+	.art-item .title {
+		margin: 0;
+		color: rgb(var(--black));
+		line-height: 1;
+	}
+
+	@media (max-width: 768px) {
+		.center img {
+			width: 300px;
+		}
+
+		.art-item:first-child img {
+			width: 100%;
+		}
+
+		.art-gallery {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.5rem;
+		}
+
+		.art-item:nth-child(odd) {
+			transform: translateY(0px);
+		}
+
+		.title {
+			color: rgb(var(--white));
+		}
+
+		.art-item {
+			width: 100%;
+			text-align: center;
+		}
+
+		.art-item:first-child {
+			margin-bottom: 0;
+		}
+	}
 
 	img {
 		width: 33vw;
