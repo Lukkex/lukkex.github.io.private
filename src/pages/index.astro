@@ -277,7 +277,8 @@ const artFiles = fs.readdirSync(artDirectory).filter(file => file.endsWith('.png
 		}
 
 		.tv-set{
-			width: 380px;
+			max-width: 380px;
+			width: 100%;
 
 		}
 
@@ -290,11 +291,17 @@ const artFiles = fs.readdirSync(artDirectory).filter(file => file.endsWith('.png
 
 		.tv {
 			width: 0px;
+			min-width: 350px;
+		}
+
+		h2{
+			font-size: 11vw;
 		}
 
 		.art-gallery {
-			transform: translate(2.2%, 1.5%);
-			height: 270px;
+			transform: translate(1.4%, 1.0%);
+			height: 250px; 
+			min-width: 310px;
 		}
 	}
 </style> 
