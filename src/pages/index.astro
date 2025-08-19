@@ -22,7 +22,7 @@ const artFiles = fs.readdirSync(artDirectory).filter(file => file.endsWith('.png
 		<Header />
 		<main>
 			<div class="center">
-				<img src="sanctumlogo.gif"/>
+				<img src="sanctumlogo.gif" id="logo" style="cursor: pointer;"/>
 			</div>
 			<br/>
 			<p>
@@ -92,9 +92,22 @@ const artFiles = fs.readdirSync(artDirectory).filter(file => file.endsWith('.png
 		<Footer />
 	</div>
 
+	<audio id="beep" src="squeak.mp3"/>
+
 	<script>
 		let currentImageIndex = Math.floor(Math.random() * document.querySelectorAll('.art-item').length);
 		const totalImages = document.querySelectorAll('.art-item').length;
+
+		const logo = document.getElementById('logo');
+		const audio = document.getElementById('beep');
+
+		logo.addEventListener('click', () => {
+			audio.currentTime = 0; 
+			audio.play().catch(err => {
+				console.error("Audio playback failed:", err);
+			});
+		});
+
 
 		function showImage(index: number) {
 			// Hide all images
