@@ -85,7 +85,15 @@ const { title, description } = Astro.props;
 			align-items: center;
 			justify-items: center;
 			font-family: monospace;
+			font-size: large;
 		}
+
+		@media (max-width: 768px) {
+			main {
+				font-size: 2.7vw;
+			}
+		}
+
 		.prose {
 			margin: auto;
 			padding: 1em;
