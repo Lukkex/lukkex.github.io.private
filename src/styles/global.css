@@ -425,6 +425,15 @@
     -webkit-animation: moveright 1s linear infinite;
 }
 
+.Cashew-right {
+    background: linear-gradient(90deg,#bb8105, #f8d799, #976f41, #3cdb2e, #3a914d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%, 100%;
+
+    -webkit-animation: moveright 2s linear infinite;
+}
+
 @keyframes hueChange {
 		0% {
 			filter: hue-rotate(0deg); /* No rotation at the start */
