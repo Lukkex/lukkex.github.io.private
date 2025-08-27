@@ -13,15 +13,20 @@ const today = new Date();
 	<body>
 		<main>
 			<br/>
-			Visitors: <script type="text/javascript" src="https://counter.websiteout.com/js/7/0/50/1"></script>
-			<br/>
-			<br/>
-			<CommentSection class="comments"/>
+			<CommentSection class="comments"/> 
 			<br/>
 		</main>
 	</body>
 
 	<a href="/CA$HEW">&copy;</a> {today.getFullYear()} Akaila B. All rights reserved.
+	<div class="counter">
+	<!-- Default gnrcounter.com code for https://zenkaiju.xyz -->
+	<script language="JavaScript" type="text/javascript" src="https://gnrcounter.com/counter.php?accId=cd1f22bddab99975fa32de6abef54418"></script>
+	<noscript>
+	<a href="https://gnrcounter.com" title="Web Analytics">Web Analytics</a>
+	</noscript>
+	<!-- End of gnrcounter.com Code --> 
+	</div>
 	<div class="social-links">
 	<!--
 		<a href="" target="_blank">
@@ -79,11 +84,14 @@ const today = new Date();
 		z-index: 2;
 		font-family: monospace;
 	}
+	.counter {
+		justify-content: center;
+		margin-top: 1em;
+	}
 	.social-links {
 		display: flex;
 		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
+		gap: 1em; 
 	}
 	.social-links a {
 		text-decoration: none;

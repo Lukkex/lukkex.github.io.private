@@ -647,6 +647,13 @@ p {
 	margin-bottom: 1em;
 }
 
+.accent-text {
+	background: linear-gradient(var(--accent-gradient)); /* Gradient from pink to dark purple */
+	-webkit-background-clip: text;  /* Clips the gradient to the text */
+	color: transparent;  /* Makes the actual text color transparent so the background gradient shows through */
+	margin-bottom: 1em;
+}
+
 .prose p {
 	margin-bottom: 2em;
 }
