@@ -16,6 +16,7 @@ const artFiles = fs.readdirSync(artDirectory).filter(file => file.endsWith('.png
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	</head>
 	<body>
 		<div class="rainbow-vines">
@@ -32,6 +33,16 @@ const artFiles = fs.readdirSync(artDirectory).filter(file => file.endsWith('.png
 				This is the official site of <code>K4IJU</code>. Here, you may find
 				a collection of my art, coding projects, philosophical works, and more.
 			</p>
+			<span id="busuanzi_container_site_uv">
+
+			Unique Visitors: <span id="busuanzi_value_site_uv"></span>
+
+			</span>
+			<div class="views">
+    			<span class="views">
+				<img src="https://visitor-badge.glitch.me/badge?page_id={{ .Permalink }}" alt="Views"/>
+				</span>
+			</div>
 			<br id="gallery"/>
 			<hr/>
 			<br/>
