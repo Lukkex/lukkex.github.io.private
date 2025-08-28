@@ -7,7 +7,7 @@ heroImage: '/project-images/project-covers/purp zenkaiju.png'
 
 So... I've been a bit busy...
 
-# I'm starting my own business(es)!
+<b class="Rainbow=right">I'm starting my own business(es)!</b>
 
 Specifically, I will be selling stickers that mix cybergothic aesthetics with revolutionary/unifying activism (to start).
 

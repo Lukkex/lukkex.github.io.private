@@ -2,7 +2,7 @@
 title: "Starting My Own Game Studio!"
 description: ''
 pubDate: 'Aug 27, 2025'
-heroImage: '/project-images/project-covers/ghoulie.gif'
+heroImage: '/project-images/project-covers/1ghoulie.gif'
 ---
 
 W.I.P. Name & Logo...
