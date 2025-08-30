@@ -66,5 +66,3 @@ Here's the code for my latest piece:
         fragColor = vec4(finalColor,1.0);
     }
 </code>
-
-You can also find a collection of my shader pieces (alongside some of my friends' pieces too) <a href="https://github.com/Lukkex/Shaders/tree/main"><u>here</u></a>.

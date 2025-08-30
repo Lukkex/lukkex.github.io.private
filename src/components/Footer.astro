@@ -3,7 +3,6 @@ import InstaLogo from "./logos/Insta.astro";
 import YouTubeLogo from "./logos/YouTube.astro";
 import GithubLogo from "./logos/Github.astro";
 import SiteLogo from "./logos/SiteLogo.astro";
-import CommentSection from "./CommentSection.astro";
 
 const today = new Date();
 ---
@@ -12,9 +11,6 @@ const today = new Date();
 
 	<body>
 		<main>
-			<br/>
-			<CommentSection class="comments"/> 
-			<br/>
 		</main>
 	</body>
 
@@ -55,17 +51,9 @@ const today = new Date();
 			<span class="sr-only">Go to the K4IJU YouTube channel</span>
 			<YouTubeLogo/>
 		</a>
-		<a href="https://github.com/Lukkex" target="_blank">
-			<span class="sr-only">My GitHub</span>
-			<GithubLogo/>
-		</a>
 	</div>
 </footer>
 <style>
-	.comments {
-
-	}
-
 	a {
   		text-decoration: none !important;
 	}
